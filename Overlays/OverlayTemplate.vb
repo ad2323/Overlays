@@ -59,11 +59,11 @@ Public Class OverlayTemplate
         End If
     End Sub
 
-    Public Sub SetVisible(ByVal visible As Boolean)
+    Public Sub SetVisible(visible As Boolean)
         If (visible) Then
-            Hide()
-        Else
             Show()
+        Else
+            Hide()
         End If
     End Sub
 

@@ -1,10 +1,9 @@
 ﻿Public Class OverlayController
 
 
-    Public OverlayForm As OverlayTemplate
+    Public OverlayForm As New OverlayTemplate
 
     Public Sub Initialize(Optional percent As Integer = 70)
-        OverlayForm = New OverlayTemplate
         AddHandler OverlayForm.FormClosing, AddressOf Overlay_Form_Closing
         SetColor(lblColor.BackColor)
         OverlayForm.HideLocator()
